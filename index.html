@@ -223,6 +223,43 @@
         margin: 0;
       }
 
+      /* ---- Customize ---- */
+      .customize-inner {
+        display: grid;
+        grid-template-columns: 1fr 0.82fr;
+        gap: 48px;
+        align-items: center;
+      }
+      .customize-copy .lead-sm {
+        color: var(--muted);
+        font-size: 18px;
+        margin: 0 0 24px;
+      }
+      .customize-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .customize-list li {
+        color: var(--muted);
+        font-size: 16.5px;
+        line-height: 1.55;
+        padding: 14px 0;
+        border-top: 1px solid var(--rule);
+      }
+      .customize-list li:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
+      .customize-list strong {
+        color: var(--fg);
+        font-weight: 650;
+      }
+      .customize-media {
+        display: flex;
+        justify-content: center;
+      }
+
       /* ---- Personal note ---- */
       .note-card {
         max-width: 42em;
@@ -350,6 +387,10 @@
           max-width: 340px;
           margin: 0 auto;
         }
+        .customize-inner {
+          grid-template-columns: 1fr;
+          gap: 36px;
+        }
       }
     </style>
   </head>
@@ -420,6 +461,52 @@
                 with the care team starts from real numbers.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="customize">
+        <div class="wrap customize-inner">
+          <div class="customize-copy">
+            <p class="eyebrow">Make it yours</p>
+            <h2>Tune it to your situation.</h2>
+            <p class="lead-sm">
+              Every family's setup is different, so the settings that matter are yours to adjust.
+              Turn on what you need and leave off what you don't.
+            </p>
+            <ul class="customize-list">
+              <li>
+                <strong>Timer reference time.</strong> Set the dial's reference to 2, 3, 5, or 10
+                minutes to match your own action plan.
+              </li>
+              <li>
+                <strong>VNS swipe tracking.</strong> If there's a VNS implant, turn on magnet-swipe
+                tracking and set the swipe limit you follow.
+              </li>
+              <li>
+                <strong>Video clips.</strong> Optionally record short clips during an episode, kept
+                for a retention window you choose.
+              </li>
+              <li>
+                <strong>Sleep hours.</strong> Set your household's sleep window so reports can tell
+                sleep-time seizures from waking ones.
+              </li>
+              <li>
+                <strong>Cluster definition.</strong> Match your neurologist's own definition of a
+                cluster: how many seizures within how many hours.
+              </li>
+              <li>
+                <strong>Appearance.</strong> Light, dark, or system, plus eight color themes.
+              </li>
+            </ul>
+          </div>
+          <div class="customize-media">
+            <div class="phone">
+              <img
+                src="img/customize.png"
+                alt="EpiNotes settings showing customizable options like the timer reference time and VNS tracking"
+              />
+            </div>
           </div>
         </div>
       </section>
