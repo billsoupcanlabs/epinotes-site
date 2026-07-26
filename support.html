@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EpiNotes — Support</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #ffffff;
+        --fg: #1b1b1f;
+        --muted: #5b5b66;
+        --accent: #6c4bb6;
+        --rule: #e4e2ea;
+        --card: #f7f6fb;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #131318;
+          --fg: #ececf1;
+          --muted: #a5a4b0;
+          --accent: #b9a3ec;
+          --rule: #2a2a33;
+          --card: #1c1c23;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        -webkit-text-size-adjust: 100%;
+      }
+      main { max-width: 720px; margin: 0 auto; padding: 40px 22px 80px; }
+      h1 { font-size: 30px; letter-spacing: -0.02em; margin: 0 0 4px; }
+      h2 { font-size: 20px; letter-spacing: -0.01em; margin: 34px 0 8px; }
+      h3 { font-size: 17px; margin: 22px 0 4px; }
+      p, li { color: var(--fg); }
+      .muted { color: var(--muted); }
+      .eyebrow { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; margin: 0 0 6px; }
+      .lead { color: var(--muted); font-size: 18px; margin: 0 0 26px; }
+      ul { padding-left: 22px; }
+      li { margin: 6px 0; }
+      a { color: var(--accent); }
+      .card { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; padding: 18px 20px; margin: 22px 0; }
+      .card h2 { margin-top: 0; }
+      hr { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
+      footer { color: var(--muted); font-size: 14px; }
+      strong { font-weight: 650; }
+      .email { font-size: 19px; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">EpiNotes</p>
+      <h1>Support</h1>
+      <p class="lead">A personal seizure-tracking app — log seizures, run a live timer during an episode, and review patterns over time.</p>
+
+      <div class="card">
+        <h2>Contact us</h2>
+        <p>The fastest way to reach us is by email. We read every message.</p>
+        <p class="email"><a href="mailto:willardtjustice@soupcanlabs.com">willardtjustice@soupcanlabs.com</a></p>
+        <p class="muted">When reporting an issue, it helps to include your device model and iOS version, and a short description of what happened.</p>
+      </div>
+
+      <h2>What EpiNotes does</h2>
+      <ul>
+        <li><strong>Log seizures</strong> — record start and end times, seizure type, rescue medication, VNS magnet swipes, sleep state, and optional video clips.</li>
+        <li><strong>Live timer</strong> — start a timer during a seizure; it keeps running even if the app is closed and resumes where it left off.</li>
+        <li><strong>Reports</strong> — see frequency, duration trends, time-of-day patterns, seizure-free streaks, and more.</li>
+        <li><strong>Optional two-caregiver sync</strong> — keep the same log in sync with one other caregiver via iCloud (off by default).</li>
+      </ul>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>Where is my data stored? Is it private?</h3>
+      <p>All your data is stored on your device. We never receive it, and there is no analytics or tracking. See our <a href="privacy.html">Privacy Policy</a> for full detail, including how the optional iCloud Sync feature works.</p>
+
+      <h3>How do I sync with another caregiver?</h3>
+      <p>In <strong>Settings → Sync</strong>, turn on Sync and tap <strong>Invite caregiver</strong> to send an iCloud share invitation. Both people need EpiNotes installed and signed in to iCloud. Sync is off until you enable it.</p>
+
+      <h3>Will the timer keep running if I lock my phone or the app closes?</h3>
+      <p>Yes. The timer is saved continuously, so it survives locking your phone or the app being closed, and resumes at the correct elapsed time when you reopen EpiNotes.</p>
+
+      <h3>How do I back up or move my data?</h3>
+      <p>Use <strong>Settings → Export</strong> to save a backup file through your device's share sheet. You can re-import it later with <strong>Settings → Import</strong>. Importing is additive and won't overwrite existing entries.</p>
+
+      <h3>Is EpiNotes a medical device? Does it give medical advice?</h3>
+      <p>No. EpiNotes is a tracking and note-taking tool only. It does not diagnose, treat, or provide medical advice. Always follow your own healthcare team's guidance, and in an emergency contact your local emergency services. A full disclaimer is available in the app under <strong>Settings → Help &amp; Legal → Medical disclaimer</strong>.</p>
+
+      <hr />
+      <footer>
+        © 2026 SoupcanLabs · EpiNotes ·
+        <a href="privacy.html">Privacy Policy</a>
+      </footer>
+    </main>
+  </body>
+</html>
