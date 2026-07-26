@@ -260,6 +260,14 @@
         justify-content: center;
       }
 
+      /* ---- Edit & log (mirrored: media left, copy right) ---- */
+      .editlog-inner {
+        display: grid;
+        grid-template-columns: 0.82fr 1fr;
+        gap: 48px;
+        align-items: center;
+      }
+
       /* ---- Personal note ---- */
       .note-card {
         max-width: 42em;
@@ -391,6 +399,13 @@
           grid-template-columns: 1fr;
           gap: 36px;
         }
+        .editlog-inner {
+          grid-template-columns: 1fr;
+          gap: 36px;
+        }
+        .editlog-inner .customize-copy {
+          order: -1;
+        }
       }
     </style>
   </head>
@@ -461,6 +476,45 @@
                 with the care team starts from real numbers.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="editlog">
+        <div class="wrap editlog-inner">
+          <div class="customize-media">
+            <div class="phone">
+              <img
+                src="img/entry-detail.png"
+                alt="An EpiNotes seizure entry showing its timing, type, notes, and an Edit button"
+              />
+            </div>
+          </div>
+          <div class="customize-copy">
+            <p class="eyebrow">Edit &amp; log</p>
+            <h2>Nothing's set in stone.</h2>
+            <p class="lead-sm">
+              Real life is messy. Fix a time, fill in a detail, or log a seizure you missed,
+              whenever you get the chance.
+            </p>
+            <ul class="customize-list">
+              <li>
+                <strong>Edit any entry later.</strong> Adjust the start or end time, the
+                rescue-medication time, or VNS swipes on a saved seizure.
+              </li>
+              <li>
+                <strong>Add clinical detail.</strong> Set the seizure type and sleep state, and add
+                notes, whenever you have a moment.
+              </li>
+              <li>
+                <strong>Attach video after the fact.</strong> Add short clips to an entry later, not
+                only during the episode.
+              </li>
+              <li>
+                <strong>Log from memory.</strong> Didn't catch it live? Create a complete entry by
+                hand, after the fact.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
